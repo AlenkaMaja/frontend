@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Heebo:wght@100..900&display=swap');
+
+
+
+:root{
+  --primary: #000;
+  --secondary: #02182B;
+}
+
+
+body{
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  min-height: calc(100vh - 264px);
+}
+
+img{
+  max-width: 100%;
+}
+  
+

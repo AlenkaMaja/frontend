@@ -1,0 +1,190 @@
+#hero h1{
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    background-color: #02182b;
+    font-size: 16px;
+    color: #b69c4a;
+  }
+  
+  
+  #hero p{
+    margin-bottom: 40px;
+    max-width: 500px;
+    text-decoration: none;
+  }
+  
+ #hero .container{
+   background-color: #02182b;  
+ }
+  
+  #hero a {
+   
+    display: inline-block;
+    padding: 7px 10px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding-top:-20px; 
+    padding-right: 15%; 
+    padding-left: 15%; 
+    padding-bottom: 5px; 
+    letter-spacing: 2px;
+  }
+  
+  .button {
+  
+    border-color: #b69c4a;
+    padding: 15px 32px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 5px;
+    max-width: 450px;
+  }
+  
+  
+  #header-image img
+  {
+  
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+  }
+  span{
+    text-decoration: none;
+    margin-bottom: 2px;
+  }
+  
+  #recent-posts  .container {
+    background-color: #02182b;
+    padding-bottom: 2%;
+  }
+  
+ 
+  
+  #recent-posts img{
+    margin-top: 5px;
+    position: relative;
+    border-radius: 0%;
+  }
+  #recent-posts .i .video-icon{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    
+  }
+  .video-icon{
+    position: center;
+  }
+  
+  #recent-posts .button {
+    color: #b69c4a;
+    padding: 10px 10px;
+    margin-top: 5px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  #recent-posts .heading-text h2,h3,h4 a{
+    text-decoration: none;
+    text-align: center;
+  }
+  #yachtcharter .container{
+    background-color: #02182b; 
+    color: #bee9e8;
+    border-radius: 3px;
+
+  }
+  
+  #yachtcharter .heading-text p, a{
+    text-decoration: none;
+    color: white;
+  }
+  #yachtcharter .heading, h2, h3::after::hover{
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-style: italic;
+  }
+  #yachtcharter .heading-text h1
+  {
+    color: #68c5db;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    font-style: italic;
+  }
+  
+  #yachtcharter h2{
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  #yachtcharter img{
+    max-width: 100%;
+    position: center;
+  }
+  
+  #yachtcharter .team-members .icon-box h2, p{
+    text-align: center;
+    padding: 10px;
+  }
+  .icon-box{
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+  }
+  .ikona{
+    border: solid 1px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+  
+  }
+  
+  
+ /*#newsletter-registration{
+  
+    background-image: 'ASA/img/newsletter-offers.png';
+    background-size: cover;
+    background-position: center;
+    max-height: 100%;
+    padding: 240px 40px;
+  
+  }
+  
+  
+  #newsletter-registration .btn, .btn, .btn:hover{
+    color: #02182B;
+    
+    
+  }
+  
+  #newsletter-registration img-fluid{
+    position: relative;
+    z-index: 2;
+  }*/
+  .slick-lightbox img{
+    width: 100%;
+    padding: 10px;
+  }
+  
+  #newsletter-registration .input-form{
+   margin-left: 22%; 
+   margin-right: 10%;
+   border-radius: 3px;
+   
+  }
+  #newsletter-registration .container-form{
+    padding-left: 30%; 
+    
+   }
+ 
+  
+  

@@ -1,0 +1,147 @@
+.login-intro{
+    background: #1b4965;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-bottom: 52px;
+    padding-top: 52px;
+  }
+  
+  .login-intro div{
+    max-width: 420px;
+    vertical-align: middle;
+  }
+  
+  
+  .login-intro h1{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700px;
+    text-align: center;
+  }
+  
+  .login-intro p{
+    color: #fff;
+    font-size: 18px;
+    line-height: 1,7;
+    letter-spacing: -1%;
+  }
+  .login-intro img{
+    margin-left: 52px;
+    margin-right: 52px;
+    margin-top: 10px;
+    margin-bottom: 105px;
+    border-radius: 50%;
+    max-width: 196px;
+    border: none;
+    border-color: #fff;
+  
+  }
+  .login-form div{
+    width: 420px;
+    align-items: center;
+    vertical-align: middle;
+  }
+  .login-form{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: auto;
+    padding-top: 25%;
+    font-size: 18px;
+    color: #02182b;
+  }
+  .login-form input, .login-form label, .login-form button{
+    display: block;
+    text-align: center;
+    width: 100%;
+  
+  }
+  .login-form h2{
+    font-size: 14px;
+  }
+  .login-form h1{
+    text-align: center;
+  }
+  
+  .login-form label{
+  font-size: 14px;
+  }
+  .login-form input{
+  background-color: #EDF2F7;
+  border-radius: 6px;
+  font-size: 15px;
+  line-height: 46px;
+  border: none;
+  padding: 0 12px;
+  }
+  
+  .login-form button{
+    background-color: #141411;
+    border-radius: 90px;
+    color: white;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .login-form p{
+    color: #02182b;
+    font-size: 16px;
+  }
+  
+  .login-form a{
+    color: #448fa3;
+    font-size: 16px;
+  }
+  
+  .login-form input[type="checkbox"]{
+    display: inline;
+    width: auto;
+    vertical-align: middle;
+  }
+  
+  button {
+    background-color: none;
+    color: #212832;
+    padding: 5px 20px;
+    margin: 20px 0px 20px 20px;
+    border: none;
+    cursor: pointer;
+    max-width: fit-content;
+    opacity: 0.9;
+    
+  }
+  
+  button:hover {
+    opacity:1;
+  }
+
+  form.loading{
+    position: relative;
+  }
+  form.loading::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    background-color: #fff;
+    background-image: url(https://miro.medium.com/v2/resize:fit:882/1*9EBHIOzhE1XfMYoKz1JcsQ.gif);
+    background-size: 160px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.9;
+
+  }
+  .alert-danger{
+    padding: 12px;
+    border-width: 5px;
+  }

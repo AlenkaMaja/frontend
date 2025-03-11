@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+	--primary: #181e4b;
+	--secondary: #212832;
+}
+* {box-sizing: border-box;}
+
+body{
+  background: url("../img/Decore.png") no-repeat;
+  background-position: top right;
+	color: var(--secondary);
+	font-family: "OpenSans", serif;
+	font-size: 16px;
+  letter-spacing: 0,1px;
+  word-spacing: 3px;
+}
+.form-control{
+  margin: 5px;
+  padding: 5px;
+}
+
+.navbar .nav-item a{
+  color: #212832;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.navbar-brand {
+  color: black;
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 20px 30px ;
+}
+
+header i {
+  font-size: 16px;
+}
+
+header a {
+  text-decoration: none;
+  color: #212832;
+  margin: 20px 40px;
+}
+
+header p{
+  line-height: 16px;
+  font-size: 14px;
+  margin: 20px 40px;
+}
+
+}
+header .navbar-toggler, header .navbar-toggler:focus{
+  color: #212832;
+  width: 100%;
+  border: 1px solid #fff;
+  font-size: 14px;
+}
+
+.nav-item a {
+    font-size: 20px;
+    font-weight: 700;
+    color: #212832;
+    margin-left: 10px;
+}
+
+.navbar-nav .nav-item a.nav-link.active {
+    color: #FF6464;
+}
+
+.navbar-toggler, .navbar-toggler:focus{
+  border: none;
+  box-shadow: none;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.btn-light{
+  text-decoration: none;
+  display: block;
+  background-color: #ced4da;
+  color: #212832;
+  padding: 14px 20px;
+  margin: 20px 0 40px 20px;
+  cursor: pointer;
+  opacity: 0.9;
+}
+.btn-light:hover {
+  opacity:1;
+}
+
+
+.login-intro{
+  background: #353945;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 200px;
+  padding-top: 10px;
+}
+
+.login-intro div{
+  width: 420px;
+
+}
+
+
+.login-intro h1{
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700px;
+}
+
+.login-intro p{
+  color: #fff;
+  font-size: 18px;
+  line-height: 1,7;
+  letter-spacing: -1%;
+}
+.login-intro img{
+  margin-left: 52px;
+  margin-top: 52px;
+
+}
+.login-form div{
+  width: 420px;
+}
+.login-form{
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  margin-top: 5px;
+}
+.login-form input, .login-form label, .login-form button{
+  display: block;
+  width: 100%;
+
+}
+.login-form h2{
+  font-size: 14px;
+}
+
+.login-form label{
+font-size: 14px;
+}
+.login-form input{
+background-color: #EDF2F7;
+border-radius: 6px;
+font-size: 15px;
+}
+
+.login-form button{
+  background-color: #141411;
+  border-radius: 6px;
+  color: white;
+  position: center;
+
+}
+
+button {
+  background-color: none;
+  color: #212832;
+  padding: 14px 20px;
+  margin: 20px 0 40px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+.container {
+  padding: 16px;
+  justify-content: space-evenly;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #212832;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+body{
+	
+	color: #5e6282;
+	font-family: "poppins", serif;
+	font-size: 16px;
+}
+
+h1, h2, h3{
+	font-family: "Volkhov", serif;
+}
+h1{
+	color: var(--primary);
+  font-size: 48px;
+  font-weight: 700;
+}
+h6, h5{
+	color: #5e6282;
+  font-family: Poppins;
+  font-weight: 400;
+}
+
+ h4{
+	color: #df6951;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: Poppins;
+}
+h3{
+  color: var(--primary);
+  font-size: 18px;
+  font-weight: 300;
+}
+
+#hero span{
+  background: url("../img/Decore-underline.png") no-repeat;
+  background-position: bottom center;
+}
+
+#hero .btn.btn-warning{
+	background: #f1a501;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 20px 30px;
+  padding: 20px;
+}
+
+#hero .i.play{
+	background: #df6951;
+}
+
+#hero img{
+  position: relative;
+ z-index: 1;
+
+}
+
+
+}
+#hero .container{
+	display: block;
+	align-items: center;
+}
+
+.services img{
+  border: none;
+  border-radius: 20px;
+}
+
+/*.col-md-3-featured{
+  background: url("../img/Rectangle.png") no-repeat;
+  background-position: relative;
+  bottom: -45px;
+}*/
+
+/*.position-absolute img{
+  position: absolute;
+  z-index: 0;
+}*/
+
+.services h5{
+  font-size: 14px;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-align: center;
+  margin-top: 5px;
+  
+}
+.services h6, p{
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  }
+
+ #category{
+  background: url("../img/stars.png") no-repeat;
+  background-position: top right;
+ } 
+
+
+.category{
+  display: block;
+  border-radius: 15%;
+  border: 1px;
+  padding: 15px 5px 10px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;  
+}
+
+.post-card{
+  display: block;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  padding: 15px;
+  border: 1px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+
+}
+
+img .destination{
+  position: center;
+  display: block;
+}
+
+.combination.content-inline img{
+  float: left;
+  margin-right: 10px;
+}
+.combination.content-inline p{
+  margin-left: 10px;
+  position: right;
+}
+
+.combination.content-inline span{
+  margin-bottom: 5px;
+}
+
+#booking .greece{
+  position: sticky;
+  display: block;
+  border-radius: 15%;
+  border: 1px;
+  padding: 30px 0px 10px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#booking .fa-solid{
+  background-color: lightgray;
+  margin: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+.reviews {
+  display: block;
+  width: 450px;
+  border-radius: 3%;
+  border: 1px;
+  padding: 50px 0px 10px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.reviews img{
+  position: relative;
+  top: -55px;
+  left: -7px;
+  margin-top: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.vertical-slider-control-prev button:hover{
+  background-color: #3E2E4D;
+}
+
+.vertical-slider-control-next button:hover{
+  background-color: #BCB7C2;
+}
+
+.service-container img{
+  width: 60%;
+  padding: 10px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.slick-lightbox img{
+  display: block;
+  width: 100%;
+}
+
+#js-veza-google_play  button{
+  width: 150px;
+  background-color: black;
+  color: #fff;
+  font-size: 8px;
+  margin: 5px;
+  border-radius: 25%;
+  border: solid black 1px;
+}
+
+#js-veza-app_store  button{
+  width: 150px;
+  background-color: black;
+  color: #fff;
+  font-size: 8px;
+  margin: 5px;
+  border-radius: 25%;
+  border: solid black 1px;
+}
+
+.newsletter row{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.newsletter img{
+  background: url("img/subscribe section.png");
+  background-position: bottom center;
+  max-width: 100%;
+  position: relative;
+  height: auto;
+  z-index: 1;
+}
+.newsletter button{
+  background-color: #FF7262;
+  color: white;
+  height: 50px;
+  width: 220px;
+  align-items: center;
+  padding-right: 45px;
+ }
+
+ .newsletter placeholder{
+  padding: 10px;
+ }
+
+  .input-with-font-icon{
+    content: center;
+    position: relative;
+  }
+
+  .input-with-font-icon input{
+    padding-left: 40px; /* Adjust based on icon size */
+  }
+
+  .input-with-font-icon i{
+    top: 40%;
+    left: 20px; /* Icon position */
+    transform: translateY(-50%);
+    color: #aaa;
+    position: absolute;
+  }
+
+.footer-section button, .footer a, .footer li, .footer li i {
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    background: none;
+    text-decoration: none;
+    padding: 0;
+    margin-left: 0;
+    font-style: normal;
+}
+
+.footer-sections row{
+  margin-right: 0;
+  align-items: right;
+  padding-right: auto;
+  padding-left: 0;
+}
+
+.Footer-linkList ul, li, ol {
+  list-style-type: none; !important
+  padding-left: 0; !important
+}
+.Footer-linkListItem li{
+  margin-left: auto;
+  margin-right: 0;
+  text-align: center;
+  padding-left: 0;
+}
+.footer-sectionTitle h4{
+  margin-left: auto;
+  margin-right: 0;
+  padding-left: 10px;
+  text-align: center;
+}
+
+ footer p,a,ul,li,h4{
+  text-decoration: none;
+ }
+
+footer a{
+  color: #5E6282;
+  font-weight: 300;
+}
+
+
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+

@@ -1,0 +1,97 @@
+.productContainer {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+}
+.productCard h4{
+    height: 78px;
+    color: #02182b;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.productCard .card-text:not(.price){
+    height: 88px;
+    overflow: hidden;
+}
+.productCard {
+padding: 10px;
+margin-bottom: 15px;
+border-radius: 8px;
+width: 200px;
+text-align: center;
+background-color: #f9f9f9;
+}
+.productCard .slick-dots{
+bottom: -25px
+}
+.productImage {
+width: 100%;
+height: auto;
+border-radius: 8px;
+}
+.categories{
+margin-top: 20px;
+margin-bottom: 20px;
+border-top: 1px solid #efefef;
+border-bottom: 1px solid #efefef;
+}
+.categories .slick-dots{
+    bottom: -15px;
+}
+.categoryName{
+padding: 20px;
+}
+.shop button{
+height: auto; 
+}
+.checkoutPage-card button{
+margin-top: 20px;
+margin-right: 20px;
+margin-left: auto;
+border-radius: 15px;
+
+}
+.checkoutPage-card h3{
+text-transform: uppercase;
+color: #1b4965;
+font-weight: 700;
+}
+.checkoutPage-card h4{
+    text-align: center;
+    color: #1b4965;
+}
+.checkoutPage-card h1, p{
+    color: #fff;
+    letter-spacing: 0.05em; 
+    text-align: center;
+}
+
+.categoryName h1{
+font-size: 16px;
+font-weight: bold;
+background-image: url(https://placehold.co/600x400/EFEFEF/FFF);
+background-size: cover;
+background-position: center;
+line-height: 140px;
+border-radius: 10px;
+text-align: center;
+}
+.shop .slider-products .slick-dots{
+    bottom: -20px
+}
+.shop .slick-dots{
+    bottom: 25px;
+}
+.slick-prev:before, .slick-next:before{
+color: #000
+}
+
+.page-header{
+background-color: #efefef;
+}
+@media (min-width:1200px){
+    
+}

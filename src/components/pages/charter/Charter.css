@@ -1,0 +1,16 @@
+.charter p, h1, button{
+    color: #02182b;
+}
+
+.charter button{
+    margin-right: 50px;
+    margin-left: auto;
+}
+.title h1{
+  margin: 0;
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #bee9e8;
+}
