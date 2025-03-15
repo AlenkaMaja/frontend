@@ -2,21 +2,21 @@ import React, { useEffect, useState } from "react";
 import '../gutenberg.css';
 
 const Schools = () => {
-  const [data, setData] = useState(null);
+  const [pageData, setPageData] = useState(null);
   
     useEffect(
           () => {
   
               fetch("https://adriaticsailingadventure.com/backend/wp-json/wp/v2/pages/2")
               .then(response => response.json())
-              .then(data => setData(data))
+              .then(data => setPageData(data))
           }, []
       );
     
-      if(!data) return <p>Loading....</p>
+      if(!pageData) return <p>Loading....</p>
   return ( 
 <div className="container">
-    <div dangerouslySetInnerHTML={{__html: data.content.rendered}} /> 
+    <div dangerouslySetInnerHTML={{__html: pageData.content.rendered}} /> 
   </div> 
    
   );

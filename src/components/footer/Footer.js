@@ -39,16 +39,16 @@ const Footer = () => {
           </ul>
       </div>
       <div className="Footer-section col-md-2">
-        <h4 className="Footer-sectionTitle ms-4">Contact</h4>
+        <h4 className="Footer-sectionTitle ms-4">Information</h4>
         <ul className="Footer-linkList">
           <li className="Footer-linkListItem">
-            <a className="link" href="/" target="_blank" rel="noopener">Help/FAQ</a>
+            <Link to="/faq" className="link" target="_blank" rel="noopener">Help/FAQ</Link>
           </li>
           <li className="Footer-linkListItem">
-            <a className="link" href="/" target="_blank" rel="noopener">Press</a>
+            <Link to="/weather" target="_blank" rel="noopener">Weather</Link>
           </li>
           <li className="Footer-linkListItem">
-            <a className="link" href="/" target="_blank" rel="noopener">Affiliates</a>
+            <Link to="/marina"  target="_blank" rel="noopener">Ports</Link>
           </li>
         </ul>
       </div>

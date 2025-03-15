@@ -9,10 +9,14 @@ import Charter from './components/pages/charter/Charter';
 import YachtsList from './components/pages/charter/YachtsList';
 import YachtSingle from './components/pages/charter/YachtSingle';
 import Schools from './components/pages/charter/Schools';
+import Ownership from './components/pages/charter/Ownership';
 import About from './components/pages/about/About';
+import Faq from './components/pages/faq/Faq';
+import Weather from './components/pages/weather/Weather';
 import Contact from './components/pages/contact/Contact';
 import Blog from './components/pages/blog/Blog';
 import BlogSingle from './components/pages/blog/BlogSingle';
+import News from './components/pages/news/News';
 import Category from './components/pages/blog/Category';
 import CategoryPage from './components/pages/blog/CategoryPage';
 import Comments from './components/pages/blog/Comments';
@@ -43,10 +47,14 @@ function App() {
           <Route path="/yachts" element={<YachtsList />} />
           <Route path="/yachts/:id" element={<YachtSingle />} />
           <Route path="/schools" element={<Schools />} />
+          <Route path="/ownership" element={<Ownership />} />
           <Route path="/about" element={<About />} />
+          <Route path="/faq" element={<Faq />} />
+          <Route path="/weather" element={<Weather />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogSingle />} />
+          <Route path="/news" element={<News />} />
           <Route path="/category" element={<Category />} />
           <Route path="/category/:category" element={<CategoryPage />} />
           <Route path='/author/:author' element={<AuthorsPage />} />

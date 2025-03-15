@@ -9,6 +9,8 @@ import './Shop.css'
 
 
 const Shop = () => {
+
+    
     const [categories, setCategories] = useState([]);    
     useEffect(
         () => {

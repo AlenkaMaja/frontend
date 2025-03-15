@@ -124,7 +124,7 @@ return (
           <button type="submit">Sign In</button>
           <p className="sign-up">
             "Don't have an account?"
-            <Link to="/Home">Sign Up</Link>
+            <Link to="/SignUp">Sign Up</Link>
           </p>
         </form>
       </div>

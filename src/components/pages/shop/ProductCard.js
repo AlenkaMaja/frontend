@@ -1,6 +1,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
+
 import './Shop.css';
 
 const ProductCard = ({ product }) => {
@@ -31,6 +32,7 @@ const ProductCard = ({ product }) => {
         });
     }
         localStorage.setItem('cart', JSON.stringify(cart));
+        alert('addedtoCart');
 
     }
 
@@ -43,7 +45,7 @@ const ProductCard = ({ product }) => {
                 <Link to={'/shop/' + product.id}>
                     <h4 className="card-title">{product.title}</h4> 
                 </Link>                               
-                <p className="card-text">{product.description}</p>
+                <h6 className="card-text">{product.description}</h6>
                 <button onClick={addToCart} className="btn btn-success"><strong>{product.price} EUR</strong></button>
             </div>
         </div> 

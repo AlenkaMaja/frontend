@@ -186,5 +186,11 @@
     
    }
  
-  
+   @media only screen and {max-width:440px;
+    .slick-lightbox img{
+      width: 50%;
+      height:calc(100vh-82px);
+      padding: 2px;
+    }
+   } 
   

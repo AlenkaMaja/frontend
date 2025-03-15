@@ -139,17 +139,17 @@ const logout = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link to="/" className="dropdown-item">
+                          <Link to="/catamarans" className="dropdown-item">
                             Catamarans
                           </Link>
                         </li>
                         <li>
-                          <Link to="/" className="dropdown-item">
+                          <Link to="/sailing" className="dropdown-item">
                            Sailing Yachts
                           </Link>
                         </li>
                         <li>
-                          <Link to="/" className="dropdown-item">
+                          <Link to="/motor" className="dropdown-item">
                             Motor Yachts
                           </Link>
                         </li>
@@ -170,51 +170,50 @@ const logout = () => {
                         aria-labelledby="navbarDropdown"
                       >
                         <li>
-                          <Link to="/" className="dropdown-item">
+                          <Link to="/destination" className="dropdown-item">
                             Destinations
                           </Link>
                         </li>
                         <li>
-                          <Link to="/" className="dropdown-item">
+                          <Link to="/category/routes" className="dropdown-item">
                             Routes
                           </Link>
                         </li>
                         <li>
-                          <Link to="/" className="dropdown-item">
+                          <Link to="/category/experiences" className="dropdown-item">
                             Experiences
                           </Link>
                         </li>
                       </ul>
                     </li>
                     <li className="nav-item dropdown">
-                      <a
+                      <Link to="/news"
                         className="nav-link dropdown-toggle"
-                        href="news.html"
                         id="navbarDropdown"
                         role="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
                       >
                         News
-                      </a>
+                      </Link>
                       <ul
                         className="dropdown-menu"
                         aria-labelledby="navbarDropdown"
                       >
                         <li>
-                          <a className="dropdown-item" href="/">
-                            New arrivals
-                          </a>
+                          <Link to="/arrivals" className="dropdown-item">
+                            Arrivals
+                          </Link>
                         </li>
                         <li>
-                          <a className="dropdown-item" href="/">
+                          <Link to="/brands" className="dropdown-item" >
                             Brands
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a className="dropdown-item" href="/">
+                          <Link to="/boat-shows" className="dropdown-item">
                             Boat shows
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </li>

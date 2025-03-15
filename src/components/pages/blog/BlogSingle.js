@@ -3,9 +3,8 @@ import { useParams } from "react-router-dom";
 import MediaImg from "../media/MediaImg";
 import PostDate from "./PostDate";
 import PostAuthor from "./PostAuthor";
-import './Blog.css';
 import '../gutenberg.css'
-
+import './Blog.css';
 
 
 const BlogSingle = () => {
@@ -33,8 +32,9 @@ const BlogSingle = () => {
             <p>
             Published: <PostDate date={post.date}/>
             </p>
+            <div className="container">
             <MediaImg id={post.featured_media} size="full" />
-            
+            </div>
             <p>
             Author: <PostAuthor authorID={post.author} />
         

@@ -11,7 +11,7 @@ const CartPage = () => {
     }, []);
 
     const totalPrice = () => {
-        return cart.reduce((total, item) => total + (item.ptice * item.quantity), 0).toFixed(2);
+        return cart.reduce((total, item) => total + (item.price * item.quantity), 0).toFixed(2);
     }
 
     const removeItem = (id) => {

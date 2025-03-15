@@ -14,3 +14,16 @@
   text-transform: uppercase;
   text-shadow: 1px 1px 1px #bee9e8;
 }
+.ownership p{
+  color:#02182b;
+  font-size: 24px;
+  font-weight: 400;
+  
+}
+.ownership h3{
+  font-size: 32px;
+}
+.ownership.blockquote{
+  display: block;
+  font-size: 24px;
+}

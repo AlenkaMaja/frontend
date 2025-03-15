@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Heebo:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Manrope:wght@200..800&display=swap');
 
 
 
@@ -9,7 +9,7 @@
 
 
 body{
-  font-family: "Cabin", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;

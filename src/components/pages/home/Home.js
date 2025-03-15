@@ -101,13 +101,13 @@ const Home = () => {
                 paddingBottom: "3%"
               }}
             >
-              <a href="blog.html/news">
+              <Link to="/news">
                 <span
                   style={{ color: "rgb(250,250,250)", textDecoration: "none" }}
                 >
                   Adriatic Revealed: The Perfect Route to discover Prvić
                 </span>
-              </a>
+              </Link>
             </h3>
           </div>
           <div
@@ -173,14 +173,13 @@ const Home = () => {
               paddingBottom: "3%"
             }}
           >
-            <a
-              href="blog.html/news"
+            <Link to="/news"
               target="_self"
               className="button"
               style={{ borderRadius: 1, borderWidth: 1 }}
             >
               Read more
-            </a>
+            </Link>
           </div>
         </div>
         <div className="col-md-4">
@@ -477,9 +476,9 @@ const Home = () => {
                       />
                     </div>
                     <h2>
-                      <a href="https://adriaticsailingadventure.com/charter/buying-yacht/">
+                      <Link to="/Ownership">
                         Become a yacht owner
-                      </a>
+                      </Link>
                     </h2>
                     <p>
                       You dream about becomimg a boat owner! Even register it
@@ -528,54 +527,95 @@ const Home = () => {
   <Slider {...settings}>
  
     <div>
-      <a href="/ASA/img/nautor swan logo.jpg" data-lightbox="galerija">
-        <img src="/ASA/img/nautor swan logo.jpg" alt="" />
+      <a href="/ASA/img/logo-nautorswan.png" data-lightbox="galerija">
+        <img src="/ASA/img/logo-nautorswan.png" height="250"  alt="nautor-swan-logo" />
       </a>
     </div>
     <div>
       <a
-        href="/ASA/img/lagoon-catamaran-logo-sticker-since-2017"
+        href="/ASA/img/cata-lagoon-logo.png"
         data-lightbox="galerija"
       >
-        <img src="/ASA/img/lagoon-catamaran-logo-sticker-since-2017.jpg" alt=""  />
+        <img src="/ASA/img/cata-lagoon-logo.png" height="200"   alt="lagoon-logo"  />
       </a>
     </div>
     <div>
       <a
-        href="/ASA/img/ferretti group logo mali.jpg"
+        href="/ASA/img/ferretti-yachts-logo.png"
         data-lightbox="galerija"
       >
-        <img src="/ASA/img/ferretti group logo mali.jpg" alt=""  />
+        <img src="/ASA/img/ferretti-yachts-logo.png" height="250"  alt="ferretti-yachts-logo"  />
       </a>
     </div>
     <div>
-      <a href="/ASA/img/maiora logo mali.jpg" data-lightbox="galerija">
-        <img src="/ASA/img/maiora logo mali.jpg" alt=""  />
+      <a href="/ASA/img/sunseeker-logo.svg" data-lightbox="galerija">
+        <img src="/ASA/img/sunseeker-logo.svg" height="250"  alt=""  />
       </a>
     </div>
     <div>
-      <a href="/ASA/img/image016.jpg" data-lightbox="galerija">
-        <img src="/ASA/img/image016.jpg" alt=""  />
+      <a href="/ASA/img/galeon_yachts_logo.png" data-lightbox="galerija">
+        <img src="/ASA/img/galeon_yachts_logo.png" height="200"  alt="galeon-yachts-logo"  />
       </a>
     </div>
     <div>
-      <a href="/ASA/img/Sunreef logo mali.jpg" data-lightbox="galerija">
-        <img src="/ASA/img/Sunreef logo mali.jpg" alt=""  />
+      <a href="/ASA/img/sunreeef-yachts-logo.png" data-lightbox="galerija">
+        <img src="/ASA/img/sunreef-yachts-logo.png" height="200"  alt="sunreef-logo"  />
       </a>
     </div>
     <div>
       <a href="/ASA/img/jeanneau logo.png" data-lightbox="galerija">
-        <img src="/ASA/img/jeanneau logo.png" alt=""  />
+        <img src="/ASA/img/jeanneau logo.png" height="200"  alt="jeanneau-logo"  />
       </a>
     </div>
     <div>
       <a
-        href="/ASA/img/x-yachts-logo-white_mali.jpg/1920x1080"
+        href="/ASA/img/X-Yachts-Logo.png"
         data-lightbox="galerija"
       >
-        <img src="/ASA/img/x-yachts-logo-white_mali.jpg" alt=""  />
+        <img src="/ASA/img/X-Yachts-Logo.png" height="200"  alt="x-yachts-logo"  />
       </a>
     </div>
+    <div>
+      <a
+        href="/ASA/img/logo_solaris-dark.png"
+        data-lightbox="galerija"
+      >
+        <img src="/ASA/img/logo_solaris-dark.png" height="250"  alt="solaris-yachts-logo"  />
+      </a>
+    </div>
+    <div>
+      <a
+        href="/ASA/img/BALI-CATAMARANS_LOGO.png"
+        data-lightbox="galerija"
+      >
+        <img src="/ASA/img/BALI-CATAMARANS_LOGO.png" height="200"  alt="bali-catamarans-logo"  />
+      </a>
+    </div>
+    <div>
+      <a
+        href="/ASA/img/beneteau-logo.png"
+        data-lightbox="galerija"
+      >
+        <img src="/ASA/img/beneteau-logo.png" height="300"  alt="beneteau-logo"  />
+      </a>
+    </div>
+    <div>
+      <a
+        href="/ASA/img/azimut-yachts-logo.png"
+        data-lightbox="galerija"
+      >
+        <img src="/ASA/img/azimut-yachts-logo.png" height="250"  alt="azimut-yachts-logo"  />
+      </a>
+    </div>
+    <div>
+      <a
+        href="/ASA/img/dufour-catamarans-logo.png"
+        data-lightbox="galerija"
+      >
+        <img src="/ASA/img/dufour-catamarans-logo.png" height="200"  alt="azimut-yachts-logo"  />
+      </a>
+    </div>                    
+
   
   </Slider>
 </section>
