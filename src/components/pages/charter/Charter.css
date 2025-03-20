@@ -27,3 +27,20 @@
   display: block;
   font-size: 24px;
 }
+
+.single-yacht img{
+  position: inherit;
+  padding-right: 40px;
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+}
+.simbol{
+  text-align: center;
+
+}
+.simbol p{
+  margin: 0 0 10px;
+  font-weight: 700;
+  padding-top: 40px;
+}

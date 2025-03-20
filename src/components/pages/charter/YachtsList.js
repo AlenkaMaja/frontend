@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt, faTag, faToolbox, faCouch } from "@fortawesome/free-solid-svg-icons";
-import MediaImg from "../media/MediaImg";
+import MediaImg from "../blog/MediaImg";
 import '../gutenberg.css';
 import './Charter.css';
 

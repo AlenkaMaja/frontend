@@ -74,7 +74,7 @@ header .navbar-toggler, header .navbar-toggler:focus{
 }
 .dropdown-item{
   display: block;
-  position: absolute;
+  
   background: #68c5db;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0, 0, 0.2);
@@ -145,7 +145,6 @@ flex-basis: 100%;
 flex-grow: 1;
 align-items: center;
 transition: all 300ms linear;
-height: 0;
 }
 
 .navbare-collapse.show{
@@ -281,7 +280,7 @@ button {
           width: 16px;
         }
         .navbar .dropdown-no-icon::after{
-          display: none;
+          display: block;
         }
         ul.dropdown-menu {
           border: none;

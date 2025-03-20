@@ -34,7 +34,7 @@ const Weather = () => {
         <div className="col-md-4"> 
         </div>
         <div className="col-md-4 button">
-        <Link to="https://meteo.hr/index_en.php" target="_blank" class="btn btn-outline-dark">Check weather in Croatia for the next 3 days</Link>
+        <Link to="https://meteo.hr/index_en.php" target="_blank" class="btn btn-outline-dark">Check the weather in Croatia</Link>
         </div>  
         <div className="col-md-4">
         </div>

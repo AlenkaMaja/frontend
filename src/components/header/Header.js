@@ -124,7 +124,7 @@ const logout = () => {
                   </span>{" "}
                   MENU
                 </button>
-                <div className={'collapse navbar-collapse' + (menu ? 'show':'')}
+                <div className={'collapse navbar-collapse ' + (menu ? 'show':'')}
                   id="navbarSupportedContent">
                   <ul className="navbar-nav me-auto mb-2 mb-md-0 mb-lg-0">
                     <li className="nav-item dropdown">
@@ -170,17 +170,17 @@ const logout = () => {
                         aria-labelledby="navbarDropdown"
                       >
                         <li>
-                          <Link to="/destination" className="dropdown-item">
+                          <Link to="/category/3" className="dropdown-item">
                             Destinations
                           </Link>
                         </li>
                         <li>
-                          <Link to="/category/routes" className="dropdown-item">
+                          <Link to="/category/" className="dropdown-item">
                             Routes
                           </Link>
                         </li>
                         <li>
-                          <Link to="/category/experiences" className="dropdown-item">
+                          <Link to="/category/" className="dropdown-item">
                             Experiences
                           </Link>
                         </li>
@@ -201,17 +201,17 @@ const logout = () => {
                         aria-labelledby="navbarDropdown"
                       >
                         <li>
-                          <Link to="/arrivals" className="dropdown-item">
+                          <Link to="/category/" className="dropdown-item">
                             Arrivals
                           </Link>
                         </li>
                         <li>
-                          <Link to="/brands" className="dropdown-item" >
+                          <Link to="/category/" className="dropdown-item" >
                             Brands
                           </Link>
                         </li>
                         <li>
-                          <Link to="/boat-shows" className="dropdown-item">
+                          <Link to="/category/" className="dropdown-item">
                             Boat shows
                           </Link>
                         </li>

@@ -2,6 +2,7 @@ import React from "react";
 import './Home.css';
 import { Link } from "react-router-dom";
 
+import NewsletterForm from "../newsletterForm/NewsletterForm";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -284,8 +285,7 @@ const Home = () => {
               >
                 <a href="charter.html/boatlistings">
                   <span style={{ color: "rgb(250,250,250)" }}>
-                    Adriatic Sailing Adventure: Your direct Route to discover
-                    Adriatic Sea in style!
+                  Adriatic Sailing Adventure: Your direct route to discovering the Adriatic Sea in style!
                     <br />
                   </span>
                 </a>
@@ -294,9 +294,7 @@ const Home = () => {
             <div className="container">
               <div className="heading heading-center text-center">
                 <span>
-                  Our goal is to offer you assistance through your search after
-                  the most suitable boat for your next Adriatic Sailing
-                  Adventure
+                Our goal is to help you find the perfect boat for your next Adriatic sailing adventure!
                 </span>
                 <hr />
               </div>
@@ -318,8 +316,7 @@ const Home = () => {
                       </a>
                     </h2>
                     <p>
-                      Find your next dream boat and your magnificent crew among
-                      our selection of premium croatian crewed yachts
+                    Find your dream boat and an exceptional crew from our selection of premium Croatian crewed yachts.
                     </p>
                     <p />
                   </div>
@@ -415,12 +412,7 @@ const Home = () => {
                       </a>
                     </h2>
                     <p>
-                      You are one of the sailing races lover! Don't worry. There
-                      are planty of nice and challenging races on Adriatic (in
-                      and off-shore), as well as excellent class racing series.
-                      Feel free to ask us for a quotation and participation on
-                      one of the well known Adriatic Racing series or Open class
-                      Regattas
+                    Are you a sailing race enthusiast? Don't worry—there are plenty of exciting and challenging races in the Adriatic, both inshore and offshore, as well as excellent class racing series. Feel free to ask us for a quote and join one of the renowned Adriatic Racing Series or Open Class Regattas!
                     </p>
                     <p />
                   </div>
@@ -439,9 +431,7 @@ const Home = () => {
                       </Link>
                     </h2>
                     <p>
-                      Do you want to learn a new skill, or just want to
-                      pracitice it a bit more? Let us know and we will organize
-                      for you one of the most suitabe programs!
+                    Want to learn a new skill or improve your practice? Let us know, and we’ll organize the perfect program for you!
                     </p>
                     <p />
                   </div>
@@ -460,9 +450,7 @@ const Home = () => {
                       </a>
                     </h2>
                     <p>
-                      You have never chartered a yacht on your own and you are
-                      afraid that your budget isn't sufficient!? Try day sailing trips
-                     or weekend sailing charter for a start and share a boat with other people or on your own but as more affordable solution.
+                    Never rented a boat before and worried about your budget? Try a day sailing or weekend charter to get started! You can share the boat with others or sail on your own—an affordable way to experience the water. Give us a call because we have the perfect solution for you!
                     </p>
                     <p />
                   </div>
@@ -481,11 +469,7 @@ const Home = () => {
                       </Link>
                     </h2>
                     <p>
-                      You dream about becomimg a boat owner! Even register it
-                      for commercial purposes and gain back some of invested
-                      money, or at least cover basic expances!? Why not! Feel
-                      free to ask for one of our charter management
-                      posibilities.
+                    Dreaming of owning a boat? Why not register it for commercial use and recover some of your investment—or at least cover the basic costs? Explore our charter management opportunities and see how we can help. Feel free to reach out!
                     </p>
                     <p />
                   </div>
@@ -508,24 +492,15 @@ const Home = () => {
     <div className="container-form d-block justify-content mt-5 d-md-flex">
       <div className="row-form">
         <div className="d-grid gap-2 d-md-flex justify-content-md">
-          <input
-            type="text"
-            placeholder="Your e-mail"
-            className="ms-4"
-            name=""
-          />
-          <button className="btn btn-light" type="button">
-              Subscribe
-          </button>
+          <NewsletterForm/>    
         </div>
       </div>
+    </div>  
     </div>
-  </div>
-  
-</section>
+  </section>
+
 <section className="slick-lightbox container py-5">
   <Slider {...settings}>
- 
     <div>
       <a href="/ASA/img/logo-nautorswan.png" data-lightbox="galerija">
         <img src="/ASA/img/logo-nautorswan.png" height="250"  alt="nautor-swan-logo" />

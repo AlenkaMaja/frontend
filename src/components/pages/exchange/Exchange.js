@@ -35,7 +35,17 @@ const Exchange = () => {
       <div className="container exchange">
         <div className="col-md-12 ms-5 mt-3 mb-3">
           <h1>Exchange</h1>
-          <h2>Convert charter fee to your own currency</h2>
+          
+    
+            <div className="row mt-3 mb-5">
+                <div className="col-md-3">
+                <img src="/ASA/img/exchange-euro-rounded.svg" height={200} width={200} alt="exchange icon"/> 
+                </div>
+                <div className="col-md-9">    
+                <h2>Convert charter fee to your own currency</h2>
+                </div> 
+            </div>
+         
           <p>You want to know how much the charter fee, which is charged in Euro currency, is in your domestic currency?
             Just put the amount of your charter fee, select your own currency and click on the button convert!
           </p>

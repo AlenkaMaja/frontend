@@ -1,8 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import QRCode from "./QRCode";
 import './Shop.css';
 
 const CheckoutPage = () => {
+  const [form, setForm] = useState({
+      beneficiary: "",
+      companyName: "",
+      address: "",
+      amount:"",
+      iban:"",
+      model:"",
+      paymentCall:"",
+      paymentDescription:"",
+
+    });
 
     return (
     <>
@@ -48,7 +60,7 @@ const CheckoutPage = () => {
             <span className="text-success">−$5</span>
           </li>
           <li className="list-group-item d-flex justify-content-between">
-            <span>Total (USD)</span>
+            <span>Total</span>
             <strong>$20</strong>
           </li>
         </ul>
@@ -324,6 +336,7 @@ const CheckoutPage = () => {
           </div>
           
         </form>
+        <QRCode form={form} />
       </div>
     </div>
   </main>

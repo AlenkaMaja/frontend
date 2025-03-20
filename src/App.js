@@ -31,8 +31,9 @@ import Shop from './components/pages/shop/Shop';
 import ProductSingle from './components/pages/shop/ProductSingle';
 import CartPage from './components/pages/shop/CartPage';
 import CheckoutPage from './components/pages/shop/CheckoutPage';
+import NewsletterForm from './components/pages/newsletterForm/NewsletterForm';
 
-
+import QRCode from './components/pages/shop/QRCode';
 
 
 function App() { 
@@ -56,11 +57,11 @@ function App() {
           <Route path="/blog/:id" element={<BlogSingle />} />
           <Route path="/news" element={<News />} />
           <Route path="/category" element={<Category />} />
-          <Route path="/category/:category" element={<CategoryPage />} />
+          <Route path="/category/:id" element={<CategoryPage />} />
           <Route path='/author/:author' element={<AuthorsPage />} />
           <Route path="/comment/:id" element={<Comments />} />
           <Route path="/loginRegister" element={<Login />} />
-          <Route path="/loginRegister" element={<SignUp />} />
+          <Route path="/SignUp" element={<SignUp />} />
           <Route path="/exchange" element={<Exchange />} />
           <Route path="/countries" element={<Countries />} />
           <Route path="/countries/:name" element={<SingleCountry />} />
@@ -68,6 +69,8 @@ function App() {
           <Route path="/shop/:id" element={<ProductSingle />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="/checkout" element={<CheckoutPage />} />
+          <Route path="/qrcode" element={<QRCode />} />
+          <Route path="/newsletterForm" element={<NewsletterForm />} />
 
         </Routes>
         <Footer />
