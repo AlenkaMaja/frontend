@@ -49,7 +49,7 @@ const Contact = () => {
         </address>
       </div>
       <div className="col-md-6">
-        <form action="contact.html" method="GET">
+        <form action="contact" method="GET">
           <div className="row">
             <div className="col-md-6 mb-3">
               <label className="form-label">Name &amp; Surname</label>

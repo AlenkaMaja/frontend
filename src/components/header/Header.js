@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 import './Header.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBuilding, faEnvelope, faPhone, faWater } from "@fortawesome/free-solid-svg-icons" ;
+import { faBuilding, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons" ;
 
 const Header = () => {
 
@@ -134,8 +134,8 @@ const logout = () => {
                       <ul className="dropdown-menu"
                         aria-labelledby="navbarDropdown" >
                         <li>
-                          <Link to="/" className="dropdown-item">
-                            Luxury-crewed Yachts
+                          <Link to="/luxury-mini-cruisers" className="dropdown-item">
+                            Luxury Mini Cruisers
                           </Link>
                         </li>
                         <li>
@@ -144,12 +144,12 @@ const logout = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link to="/sailing" className="dropdown-item">
+                          <Link to="/sailing-yachts" className="dropdown-item">
                            Sailing Yachts
                           </Link>
                         </li>
                         <li>
-                          <Link to="/motor" className="dropdown-item">
+                          <Link to="/motor-yachts" className="dropdown-item">
                             Motor Yachts
                           </Link>
                         </li>
@@ -175,12 +175,12 @@ const logout = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link to="/category/" className="dropdown-item">
+                          <Link to="/category/39" className="dropdown-item">
                             Routes
                           </Link>
                         </li>
                         <li>
-                          <Link to="/category/" className="dropdown-item">
+                          <Link to="/category/11" className="dropdown-item">
                             Experiences
                           </Link>
                         </li>
@@ -201,17 +201,17 @@ const logout = () => {
                         aria-labelledby="navbarDropdown"
                       >
                         <li>
-                          <Link to="/category/" className="dropdown-item">
+                          <Link to="/category/42" className="dropdown-item">
                             Arrivals
                           </Link>
                         </li>
                         <li>
-                          <Link to="/category/" className="dropdown-item" >
+                          <Link to="/category/41" className="dropdown-item" >
                             Brands
                           </Link>
                         </li>
                         <li>
-                          <Link to="/category/" className="dropdown-item">
+                          <Link to="/category/40" className="dropdown-item">
                             Boat shows
                           </Link>
                         </li>
@@ -223,6 +223,7 @@ const logout = () => {
                       </Link>
                     </li>
                   </ul>
+                  
                   {username ? (
                     <button onClick={logout} className="btn">Welcome, {username}</button>
                   ) : (

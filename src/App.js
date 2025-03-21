@@ -7,6 +7,11 @@ import Footer from './components/footer/Footer';
 import Home from './components/pages/home/Home';
 import Charter from './components/pages/charter/Charter';
 import YachtsList from './components/pages/charter/YachtsList';
+import CatamaransPage from './components/pages/charter/CatamaransPage';
+import SailingYachtsPage from './components/pages/charter/SailingYachtsPage';
+import MotorYachtsPage from './components/pages/charter/MotorYachtsPage';
+import LuxuryMiniCruisersPage from './components/pages/charter/LuxuryMiniCruisersPage';
+
 import YachtSingle from './components/pages/charter/YachtSingle';
 import Schools from './components/pages/charter/Schools';
 import Ownership from './components/pages/charter/Ownership';
@@ -34,7 +39,7 @@ import CheckoutPage from './components/pages/shop/CheckoutPage';
 import NewsletterForm from './components/pages/newsletterForm/NewsletterForm';
 
 import QRCode from './components/pages/shop/QRCode';
-
+import OrderPayment from './components/pages/shop/OrderPayment';
 
 function App() { 
   return (
@@ -46,6 +51,10 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/charter" element={<Charter />} />
           <Route path="/yachts" element={<YachtsList />} />
+          <Route path="/catamarans" element={<CatamaransPage />} />
+          <Route path="/sailing-yachts" element={<SailingYachtsPage />} />
+          <Route path="/motor-yachts" element={<MotorYachtsPage />} />
+          <Route path="/luxury-mini-cruisers" element={<LuxuryMiniCruisersPage />} />
           <Route path="/yachts/:id" element={<YachtSingle />} />
           <Route path="/schools" element={<Schools />} />
           <Route path="/ownership" element={<Ownership />} />
@@ -70,6 +79,7 @@ function App() {
           <Route path="/cart" element={<CartPage />} />
           <Route path="/checkout" element={<CheckoutPage />} />
           <Route path="/qrcode" element={<QRCode />} />
+          <Route path="/payment" element={<OrderPayment />} />
           <Route path="/newsletterForm" element={<NewsletterForm />} />
 
         </Routes>

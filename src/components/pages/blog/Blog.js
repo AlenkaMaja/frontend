@@ -13,7 +13,7 @@ const Blog = () => {
 
     useEffect(
         () => {
-        fetch('https://adriaticsailingadventure.com/backend/wp-json/wp/v2/posts?category=38')
+        fetch('https://adriaticsailingadventure.com/backend/wp-json/wp/v2/posts?categories=38')
             .then(response => {
                 return response.json();
             })

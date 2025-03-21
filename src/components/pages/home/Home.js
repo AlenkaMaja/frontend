@@ -44,11 +44,11 @@ const Home = () => {
 
      <div className="heading" id="home_title">
       <h3 clas="heading-text primary-font s-text-color s-text-border">
-      <a href="blog.html/routes">
+      <Link to="/post/21">
         <span>Adriatic Revealed: The Perfect Route to discover Prvić
           <br />
         </span>
-      </a>
+      </Link>
       </h3>
      </div>
 
@@ -60,7 +60,7 @@ const Home = () => {
             }}
             decoration="none"
           >
-      <a href="blog.html/routes" target="_self" className="button" style={{ borderRadius: 1, borderWidth: 1 }}>Read more</a>
+      <Link to="/category/456" target="_self" className="button" style={{ borderRadius: 1, borderWidth: 1 }}>Read more</Link>
     </div>
     <br />
     </div>
@@ -69,7 +69,7 @@ const Home = () => {
     <div className="container">
       <div className="row">
         <div className="col-md-4">
-          <a href="/" display="block" position="relative">
+          <Link to="/category/41" display="block" position="relative">
             <img
               src="../ASA/img/ASA-naslovna.jpg"
               alt=""
@@ -83,15 +83,15 @@ const Home = () => {
                 <i className="fa-regular fa-circle-play" position="absolute" />
               </div>
             </div>
-          </a>
+          </Link>
           <h4
             className="heading-text nav-item"
             style={{ letterSpacing: "0.03em font-size:26px" }}
           >
           
-            <a href="blog-single.html">
+            <Link to="/category/41">
               <font color="/7099bf">NEWS</font>
-            </a>
+            </Link>
           </h4>
           <div className="heading" id="home_title">
             <h3
@@ -102,7 +102,7 @@ const Home = () => {
                 paddingBottom: "3%"
               }}
             >
-              <Link to="/news">
+              <Link to="/category/41">
                 <span
                   style={{ color: "rgb(250,250,250)", textDecoration: "none" }}
                 >
@@ -120,14 +120,13 @@ const Home = () => {
             }}
             decoration="none"
           >
-            <a
-              href="news.html"
+            <Link to="/category/41"
               target="_self"
               className="button"
               style={{ borderRadius: 1, borderWidth: 1 }}
             >
               Read more
-            </a>
+            </Link>
           </div>
         </div>
         <div className="col-md-4">
@@ -144,9 +143,9 @@ const Home = () => {
             className="heading-text nav-item"
             style={{ letterSpacing: "0.03em font-size:26px" }}
           >
-            <a href="blog.html/destinations">
+            <Link to="/category/3">
               <font color="/7099bf">DESTINATIONS</font>
-            </a>
+            </Link>
           </h4>
           <div className="heading" id="home_title">
             <h3
@@ -157,12 +156,12 @@ const Home = () => {
                 paddingBottom: "3%"
               }}
             >
-              <a href="blog.html/destinations">
+              <Link to="/category/3">
                 <span style={{ color: "rgb(250,250,250)" }}>
                   Adriatic at its best: Small paradise that still needs to be
                   discovered!
                 </span>
-              </a>
+              </Link>
             </h3>
           </div>
           <div
@@ -174,7 +173,7 @@ const Home = () => {
               paddingBottom: "3%"
             }}
           >
-            <Link to="/news"
+            <Link to="/category/3"
               target="_self"
               className="button"
               style={{ borderRadius: 1, borderWidth: 1 }}
@@ -197,9 +196,9 @@ const Home = () => {
             className="heading-text nav-item"
             style={{ letterSpacing: "0.03em font-size:26px" }}
           >
-            <a href="blog.html/experiences">
+            <Link to="/category/11">
               <font color="/7099bf">EXPERIENCES</font>
-            </a>
+            </Link>
           </h4>
           <div className="heading" id="home_title">
             <h3
@@ -210,11 +209,11 @@ const Home = () => {
                 paddingBottom: "3%"
               }}
             >
-              <a href="blog.html/experiences">
+              <Link to="/category/11">
                 <span style={{ color: "rgb(250,250,250)" }}>
                   Charm of the Adriatic: The most beautiful city on an island
                 </span>
-              </a>
+              </Link>
             </h3>
           </div>
           <div
@@ -226,14 +225,13 @@ const Home = () => {
             }}
             decoration="none"
           >
-            <a
-              href="blog.html/news"
+            <Link to="/category/11"
               target="_self"
               className="button"
               style={{ borderRadius: 1, borderWidth: 1 }}
             >
               Read more
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -311,9 +309,9 @@ const Home = () => {
                       />
                     </div>
                     <h2>
-                      <a href="https://adriaticsailingadventure.com/charter/luxury-crewed-yachts/">
+                      <Link to="/sailing-yachts">
                         Luxury Crewed Yachts
-                      </a>
+                      </Link>
                     </h2>
                     <p>
                     Find your dream boat and an exceptional crew from our selection of premium Croatian crewed yachts.
@@ -330,9 +328,9 @@ const Home = () => {
                       />
                     </div>
                     <h2>
-                      <a href="https://adriaticsailingadventure.com/charter/sailing-yachts">
+                      <Link to="/sailing-yachts">
                         Sailing Yachts
-                      </a>
+                      </Link>
                     </h2>
                     <p>Discover the best renowned world brands</p>
                     <p />
@@ -347,8 +345,8 @@ const Home = () => {
                       />
                     </div>
                     <h2>
-                      <Link to="/yachts">
-                        Crewed and bareboat Catamarans{" "}
+                      <Link to="/catamarans">
+                        Crewed and bareboat Catamarans
                       </Link>
                     </h2>
                     <p>
@@ -367,9 +365,9 @@ const Home = () => {
                       />
                     </div>
                     <h2>
-                      <a href="https://adriaticsailingadventure.com/charter/motor-yachts/">
+                      <Link to="/motor-yachts">
                         Motor Yachts
-                      </a>
+                      </Link>
                     </h2>
                     <p>
                       Find the best motor yacht on Adriatic, with or without
@@ -387,7 +385,7 @@ const Home = () => {
                       />
                     </div>
                     <h2>
-                      <a href="https://adriaticsailingadventure.com/charter/cruise-ships/">
+                      <a href="/luxury-mini-cruisers">
                         Motor-sailors and Cruise Ships
                       </a>
                     </h2>

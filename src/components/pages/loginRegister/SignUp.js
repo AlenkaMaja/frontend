@@ -5,7 +5,6 @@ const SignUp = () => {
 
   return (
     <>
-      <h1>Registration form</h1>
       <button onClick={() => setModalOpen(true)}>Sign Up</button>
 
       {modalOpen && (

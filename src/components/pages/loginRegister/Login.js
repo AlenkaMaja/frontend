@@ -65,6 +65,7 @@ if(localStorage.getItem('token')){
       window.location.reload();   
 });
 }
+const [modalOpen, setModalOpen] = useState(false);
 
 return (
     
@@ -83,8 +84,7 @@ return (
       <div>
         <h1>Welcome to Adriatic Sailing Adventure!</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulpulate ut
-          laoreet velit ma.
+          Release the mooring lines, hoist your sails, adjust them to the wind and start your new adventure.
         </p>
       </div>
       <img
@@ -122,11 +122,60 @@ return (
 
           
           <button type="submit">Sign In</button>
-          <p className="sign-up">
-            "Don't have an account?"
-            <Link to="/SignUp">Sign Up</Link>
-          </p>
-        </form>
+          </form>
+          <div className="sign-up- mt-5 ms-5">
+          <p className="sign-up mt-5 ms-5">"Don't have an account?"</p>
+          <div className="model-button">
+          <button onClick={() => setModalOpen(true)}>Sign Up</button>
+          </div>
+          </div> 
+          {modalOpen && (
+        <div id="id01" className="modal d-block">
+          <span onClick={() => setModalOpen(false)} className="close" title="Close Modal">
+            ×
+          </span>
+          <form className="modal-content" action="/action_page.php">
+            <h1>Sign Up</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr />
+            <label htmlFor="email">
+              <b>Email</b>
+            </label>
+            <input type="text" placeholder="Enter Email" name="email" required />
+
+            <label htmlFor="psw">
+              <b>Password</b>
+            </label>
+            <input type="password" placeholder="Enter Password" name="psw" required />
+  <label htmlFor="psw-repeat">
+              <b>Repeat Password</b>
+            </label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required />
+
+            <label>
+              <input type="checkbox" defaultChecked name="remember" style={{marginBottom: 15 }}/> Remember me
+            </label>
+
+            <p>
+              By creating an account you agree to our
+              <a href="/" style={{color: "dodgerblue" }}>
+                Terms & Privacy
+              </a>
+              
+            </p>
+
+            <div className="clearfix">
+              <button type="button" onClick={() => setModalOpen(false)}className="cancelbtn">
+                Cancel
+              </button>
+              <button type="submit" className="signupbtn">
+                Sign Up
+              </button>
+            </div>
+          </form>
+        </div>
+      )}
+        
       </div>
     </div>
   </div>

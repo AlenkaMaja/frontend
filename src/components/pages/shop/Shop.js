@@ -81,7 +81,7 @@ return (
             </div>
         </div>
         <div>
-            <div class="container col-xxl-8 px-4 py-5">
+            <div class="container col-xxl-8  px-4 py-5">
                 <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                     <div class="col-lg-6">
                         <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1>
@@ -110,10 +110,10 @@ return (
     </div>
 
 
-
+    <div className="category container">
     <SliderProducts category="smartphones" limit="8" sectionName="The best selling products" />
     <SliderProducts category="beauty" limit="8" sectionName="The best rated products"/>    
-        
+    </div>    
 </div>       
 </>  
 

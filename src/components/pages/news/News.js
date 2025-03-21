@@ -15,7 +15,7 @@ const News = () => {
 
     useEffect(
         () => {
-        fetch('https://adriaticsailingadventure.com/backend/wp-json/wp/v2/posts?categories=41')
+        fetch('https://adriaticsailingadventure.com/backend/wp-json/wp/v2/posts?categories=1')
             .then(response => {
                 return response.json();
             })
@@ -36,7 +36,7 @@ return (
                         <MediaImg id={post.featured_media} size="full" />
                     </div>
                 <div className="col-md-6 offset-md-1">
-                    <Link to={'/blog/' + post.slug}>
+                    <Link to={'/news/' + post.slug}>
                     <h2 dangerouslySetInnerHTML={{__html: post.title.rendered}} />
                     </Link>
                     <p className="generalije">

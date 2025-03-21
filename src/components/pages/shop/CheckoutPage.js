@@ -1,83 +1,62 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import QRCode from "./QRCode";
-import './Shop.css';
+import "./Shop.css";
 
 const CheckoutPage = () => {
-  const [form, setForm] = useState({
-      beneficiary: "",
-      companyName: "",
-      address: "",
-      amount:"",
-      iban:"",
-      model:"",
-      paymentCall:"",
-      paymentDescription:"",
+  const [cart, setCart] = useState([]);
 
-    });
+  useEffect(() => {
+    const localCart = JSON.parse(localStorage.getItem("cart")) || [];
+    setCart(localCart);
+  }, []);
 
-    return (
+  const totalPrice = () => {
+    return cart
+      .reduce((total, item) => total + (item.price * item.quantity), 0)
+      .toFixed(2);
+  };
+
+  return (
     <>
     <div className="container">
-  <main>
-    <div className="py-5 text-center">
-      <h2>Checkout form</h2>
-      
-    </div>
-    <div className="row g-5">
-      <div className="col-md-5 col-lg-4 order-md-last">
-        <h4 className="d-flex justify-content-between align-items-center mb-3">
-          <span className="text-primary">Your cart</span>
-          <span className="badge bg-primary rounded-pill">3</span>
-        </h4>
-        <ul className="list-group mb-3">
-          <li className="list-group-item d-flex justify-content-between lh-sm">
-            <div>
-              <h6 className="my-0">Product name</h6>
-              <small className="text-muted">Brief description</small>
-            </div>
-            <span className="text-muted">$12</span>
-          </li>
-          <li className="list-group-item d-flex justify-content-between lh-sm">
-            <div>
-              <h6 className="my-0">Second product</h6>
-              <small className="text-muted">Brief description</small>
-            </div>
-            <span className="text-muted">$8</span>
-          </li>
-          <li className="list-group-item d-flex justify-content-between lh-sm">
-            <div>
-              <h6 className="my-0">Third item</h6>
-              <small className="text-muted">Brief description</small>
-            </div>
-            <span className="text-muted">$5</span>
-          </li>
-          <li className="list-group-item d-flex justify-content-between bg-light">
-            <div className="text-success">
-              <h6 className="my-0">Promo code</h6>
-              <small>EXAMPLECODE</small>
-            </div>
-            <span className="text-success">−$5</span>
-          </li>
-          <li className="list-group-item d-flex justify-content-between">
-            <span>Total</span>
-            <strong>$20</strong>
-          </li>
-        </ul>
-        <form className="card p-2">
-          <div className="input-group">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Promo code"
-            />
-            <button type="submit" className="btn btn-secondary">
-              Redeem
-            </button>
+      <main>
+        <div className="py-5 text-center">
+          <h2>Checkout form</h2>
+        </div>
+        <div className="row g-5">
+          {/* Cart Summary */}
+          <div className="col-md-5 col-lg-4 order-md-last">
+            <h4 className="d-flex justify-content-between align-items-center mb-3">
+              <span className="text-primary">Your cart</span>
+              <span className="badge bg-primary rounded-pill">{cart.length}</span>
+            </h4>
+            <ul className="list-group mb-3">
+              {cart.map((item) => (
+                <li key={item.id} className="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 className="my-0">{item.title}</h6>
+                    <small className="text-muted">Qty: {item.quantity}</small>
+                  </div>
+                  <span className="text-muted">{(item.price * item.quantity).toFixed(2)} EUR</span>
+                </li>
+              ))}
+              <li className="list-group-item d-flex justify-content-between">
+                <span>Total</span>
+                <strong>{totalPrice()} EUR</strong>
+              </li>
+            </ul>
+            <form className="card p-2">
+              <div className="input-group">
+                <input type="text" className="form-control" placeholder="Promo code" />
+                <button type="submit" className="btn btn-secondary">
+                  Redeem
+                </button>
+              </div>
+            </form>
           </div>
-        </form>
-      </div>
-      <div className="col-md-7 col-lg-8">
+          
+          <div className="col-md-7 col-lg-8">
         <h4 className="mb-3">Billing address</h4>
         <form className="needs-validation" noValidate="">
           <div className="row g-3">
@@ -333,14 +312,14 @@ const CheckoutPage = () => {
               />
               <div className="invalid-feedback">Security code required</div>
             </div>
-          </div>
-          
+          </div>  
         </form>
-        <QRCode form={form} />
-      </div>
+        <Link to="/payment" className="btn btn-success mt-3">Proceed to Payment</Link>
+           
+          </div>
+        </div>
+      </main>
     </div>
-  </main>
-</div>
 
         <div class="checkoutPage-card">
            <div className="container">
@@ -361,4 +340,4 @@ const CheckoutPage = () => {
     </>
     );
 }
-export default CheckoutPage;
+export default CheckoutPage; 

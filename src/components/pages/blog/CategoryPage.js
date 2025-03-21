@@ -29,7 +29,7 @@ const CategoryPage = () => {
     
     <>
         <div className="container blog">
-            <h1>Blog</h1>  
+            <h1>Blog<</h1>  
             <div>
                 {post.map(post => (
                 <div className="row mb-5 pt-5">
