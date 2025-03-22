@@ -174,23 +174,23 @@
     width: 100%;
     padding: 10px;
   }
-  
-  #newsletter-registration .input-form{
-   margin-left: 22%; 
-   margin-right: 10%;
-   border-radius: 3px;
-   
+  #newsletter-registration .input-form {
+    width: 100%;
+    border-radius: 3px;
   }
-  #newsletter-registration .container-form{
-    padding-left: 30%; 
-    
-   }
- 
-   @media only screen and {max-width:440px;
-    .slick-lightbox img{
-      width: 50%;
-      height:calc(100vh-82px);
-      padding: 2px;
-    }
-   } 
+  
+  /* Fix container padding issue */
+  #newsletter-registration .container-form {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  /* Fix the row alignment issue */
+  #newsletter-registration .row {
+    justify-content: center;
+  }
+  
+  .newsletter-form {
+    width: 100%;
+  }
   

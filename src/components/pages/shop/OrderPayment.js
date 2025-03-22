@@ -44,7 +44,7 @@ const OrderPayment = () => {
         <p className="text-danger text-center">No items in cart.</p>
       )}
 
-      <Link to="/" className="btn btn-primary mt-4">Back to Home</Link>
+      <Link to="/" className="btn btn-secondary mt-4 mb-5">Back to Home</Link>
     </div>
   );
 };

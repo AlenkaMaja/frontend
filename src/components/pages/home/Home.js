@@ -482,22 +482,23 @@ const Home = () => {
   <section id="newsletter-registration">
     <div className="container">
       <div className="row">
-        <div className="col-md-12 mt-5 display-flex">
+        <div className="col-md-12 mt-5 d-flex justify-content-center">
         <img src="/ASA/img/newsletter-offers.png"  alt="newsletter" className="ikona"
         />
-      </div>
-    </div>
-    <div className="container-form d-block justify-content mt-5 d-md-flex">
-      <div className="row-form">
-        <div className="d-grid gap-2 d-md-flex justify-content-md">
-          <NewsletterForm/>    
         </div>
       </div>
-    </div>  
+    <div className="container-form mt-5">
+      <div className="row-form justify-content-center">
+        <div className="col-md-8 d-flex flex-column flex-md-row align-items-center gap-3">
+          <NewsletterForm/>    
+        </div>
+      </div>  
     </div>
-  </section>
+  </div>
+</section>
 
 <section className="slick-lightbox container py-5">
+  <div className="col-md-12">
   <Slider {...settings}>
     <div>
       <a href="/ASA/img/logo-nautorswan.png" data-lightbox="galerija">
@@ -517,7 +518,7 @@ const Home = () => {
         href="/ASA/img/ferretti-yachts-logo.png"
         data-lightbox="galerija"
       >
-        <img src="/ASA/img/ferretti-yachts-logo.png" height="250"  alt="ferretti-yachts-logo"  />
+        <img src="/ASA/img/ferretti-yachts-logo.png" height="250" width="100"  alt="ferretti-yachts-logo"  />
       </a>
     </div>
     <div>
@@ -591,6 +592,7 @@ const Home = () => {
 
   
   </Slider>
+  </div>
 </section>
 
 

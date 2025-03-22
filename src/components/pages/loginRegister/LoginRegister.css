@@ -83,12 +83,19 @@
   padding: 0 12px;
   }
   
-  .login-form button{
-    background-color: #141411;
+  .login-form .btn-left{
+    background-color: #1b4965;
+    display: block;
+    margin-left: 0;
     border-radius: 90px;
     color: white;
+    padding-left: 15px;
+    padding-right: 15px;
     font-size: 16px;
     border: none;
+    cursor: pointer;
+    max-width: fit-content;
+    opacity: 0.9;
   }
   
   .login-form p{
@@ -107,17 +114,7 @@
     vertical-align: middle;
   }
   
-  button {
-    background-color: none;
-    color: #212832;
-    padding: 5px 20px;
-    margin: 20px 0px 20px 20px;
-    border: none;
-    cursor: pointer;
-    max-width: fit-content;
-    opacity: 0.9;
-    
-  }
+  
   
   button:hover {
     opacity:1;
@@ -161,32 +158,70 @@
     padding-top: 50px;
   }
 
-  .modal-button {
+  .btn-right{
+    display: flex;
+    justify-content: flex-end;
     background-color: none;
-    color: #212832;
-    padding: 5px 20px;
-    
+    border-radius: 90px;
+    color: white;
+    font-size: 16px;
     border: none;
     cursor: pointer;
     max-width: fit-content;
     opacity: 0.9; 
   }
+  .sign-up-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*width: 100%; /* Ensure it spans the full width */
+  }
+  
+  .sign-up-text {
+    margin: 0;
+    flex-grow: 1; /* Pushes the button to the right */
+  }
 
-  .cancelbtn{
+  .clearfix .cancelbtn{
+    display: flex;
+    background-color: #02182b;
+    border-radius: 90px;
+    color: white;
+    font-size: 16px;
+    padding-bottom: 34px;
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-left: 20px;
+    border: none;
+    cursor: pointer;
+    max-width: 105px;
+    opacity: 0.9; 
     text-align: center;
-    padding-bottom: 25px;
+   }
+   .clearfix .signupbtn{
+    display: flex;
+    justify-content: flex-end;
+    background-color: none;
+    border-radius: 90px;
+    color: white;
+    font-size: 16px;
+    padding-bottom: 30px;
+    padding-top: 5px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 5px;
-   
+    border: none;
+    cursor: pointer;
+    max-width: fit-content;
+    opacity: 0.9; 
+    text-align: center;
+   }
 
-  }
   /* Modal Content/Box */
   .modal-content {
     background-color: #fefefe;
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
-    width: 90%; /* Could be more or less, depending on screen size */
+    width: 100%; /* Could be more or less, depending on screen size */
     padding: 10px;
   }
   
@@ -194,6 +229,10 @@
   hr {
     border: 1px solid #212832;
     margin-bottom: 25px;
+  }
+  #id01.modal.d-block{
+    width: 70%;
+
   }
    
   /* The Close Button (x) */

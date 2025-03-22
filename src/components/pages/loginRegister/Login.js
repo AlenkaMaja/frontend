@@ -84,7 +84,7 @@ return (
       <div>
         <h1>Welcome to Adriatic Sailing Adventure!</h1>
         <p>
-          Release the mooring lines, hoist your sails, adjust them to the wind and start your new adventure.
+        Cast off the mooring lines, hoist your sails, and let the wind guide you toward a new adventure.
         </p>
       </div>
       <img
@@ -121,11 +121,11 @@ return (
           { error ? <p className="alert alert-danger">{error}</p> : "" }
 
           
-          <button type="submit">Sign In</button>
+          <button type="submit" className="btn-left">Sign In</button>
           </form>
-          <div className="sign-up- mt-5 ms-5">
-          <p className="sign-up mt-5 ms-5">"Don't have an account?"</p>
-          <div className="model-button">
+          <div className="sign-up-container">
+          <p className="sign-up-text">"Don't have an account?"</p>
+          <div className="btn-right">
           <button onClick={() => setModalOpen(true)}>Sign Up</button>
           </div>
           </div> 

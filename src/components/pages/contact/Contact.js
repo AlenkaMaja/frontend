@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import './Contact.css';
 
 const Contact = () => {
@@ -43,9 +44,10 @@ const Contact = () => {
           Croatia
           <br />
           <abbr title="Phone">Tel:</abbr>{" "}
-          <a href="tel:+38517899700">+385 (0)1 7899-700</a>
+          <Link to="tel:+38599732172">+385 (0)99 7302-172</Link>
           <br />
-          <abbr title="Fax">Fax:</abbr> +385 (0)1 7899-799
+          <abbr title="Email">E-mail:</abbr>
+          <Link to="mailto:info@adriaticsailingadventure.com">info@adriaticsailingadventure.com</Link>
         </address>
       </div>
       <div className="col-md-6">

@@ -30,6 +30,7 @@ const YachtSingle = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
+        autoplay: true,
         autoplayspeed: 3000
     };
 
@@ -40,7 +41,7 @@ return (
                 <h1 dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
                 
             {/* Yacht Image Slider */}
-            <Slider {...sliderSettings} style={{ maxWidth: "100%", margin: "auto" }}>
+            <Slider {...sliderSettings} style={{ maxWidth: "100%", Height:"560px", paddingRight: "40px" }}>
                 <MediaImg id={post.acf.main_photo} size="full" />
                 <MediaImg id={post.acf.Exterior_photo} size="full" />
                 <MediaImg id={post.acf.aerial_photo} size="full" />
@@ -56,27 +57,24 @@ return (
             </Slider>
         </div>
 
-        <div className="row featured">
-            <h2>KEY FEATURES</h2>
+        <div className="row featured mt-5">
+          <h2>KEY FEATURES</h2>
             <div className="col-md-3 col-6 simbol">
-            <img src="/ASA/img/ruler-svgrepo-com.svg" height={60} width={60} className="cart-icon ms-3" alt="ASA-ruler"/>
-                
-                <p>
+            <img src="/ASA/img/ruler-svgrepo-com.svg" height={60} width={60} className="cart-icon " alt="ASA-ruler"/>
+              <p>
                 {post.acf.length}
-                </p>
+              </p>
             </div>
-
-          
             <div className="col-md-3 col-6 simbol">
-            <img src="/ASA/img/captain-svgrepo-com.svg" height={60} width={60} className="cart-icon ms-3" alt="ASA-crew"/>
+            <img src="/ASA/img/captain-svgrepo-com.svg" height={60} width={60} className="cart-icon " alt="ASA-crew"/>
             <p>{post.acf.crew}</p>
             </div>
             <div className="col-md-3 col-6 simbol">
-            <img src="/ASA/img/door-hanger-do-not-disturb-svgrepo-com.svg" height={60} width={60} className="cart-icon ms-3" alt="ASA-cabins"/>
+            <img src="/ASA/img/door-hanger-do-not-disturb-svgrepo-com.svg" height={60} width={60} className="cart-icon " alt="ASA-cabins"/>
             <p> {post.acf.cabins}</p>
             </div>
             <div className="col-md-3 col-6 simbol">
-            <img src="/ASA/img/beds-hotel-svgrepo-com.svg" height={60} width={60} className="cart-icon ms-3" alt="ASA-sleeps"/>
+            <img src="/ASA/img/beds-hotel-svgrepo-com.svg" height={60} width={60} className="cart-icon " alt="ASA-sleeps"/>
                 <p>{post.acf.sleeps}</p>
             </div>
         </div>

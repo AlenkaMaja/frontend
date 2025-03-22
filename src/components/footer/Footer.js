@@ -73,7 +73,7 @@ const Footer = () => {
           <ul className="Footer-appList">
             <li className="Footer-appListItem">
               <button id="js-veza-app_store" type="button" className="link"> 
-              <Link to="www.youtube.com/@adriaticsailing7414" data-faux-anchor="true" role="link">
+              <Link to="https://www.youtube.com/@adriaticsailing7414" target="_blank" data-faux-anchor="true" role="link">
               <FontAwesomeIcon icon={faYoutube} />Available on YouTube
               </Link></button>
             </li>
@@ -83,16 +83,16 @@ const Footer = () => {
     </div>
   </div>
   </div>
-</footer>
+</footer>         
 
 
 
 
 <footer className="text-center">
   <div className="icons">
-    <Link to="/"><FontAwesomeIcon icon={faFacebook} /></Link>
-    <Link to="/"><FontAwesomeIcon icon={faInstagram} /></Link>
-    <Link to="/"><FontAwesomeIcon icon={faLinkedin} /></Link>
+    <Link to="https://www.facebook.com/AdriaticSailingLtd" target="_blank"><FontAwesomeIcon icon={faFacebook} /></Link>
+    <Link to="https://www.instagram.com/adriaticsailing/?hl=en" target="_blank"><FontAwesomeIcon icon={faInstagram} /></Link>
+    <Link to="https://www.linkedin.com/in/adriaticsailing/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></Link>
   </div>
 
   <p>Copyright ©2024 All rights reserved </p>

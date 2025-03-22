@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import QRCode from "./QRCode";
 import "./Shop.css";
 
 const CheckoutPage = () => {
@@ -314,7 +313,7 @@ const CheckoutPage = () => {
             </div>
           </div>  
         </form>
-        <Link to="/payment" className="btn btn-success mt-3">Proceed to Payment</Link>
+        <Link to="/payment" className="btn btn-primary mt-3">Proceed to Payment</Link>
            
           </div>
         </div>
