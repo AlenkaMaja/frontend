@@ -1,7 +1,24 @@
 .about{
-    background-color: #448fa3;
+    background-color: #62b6cb;
     color: #02182b
 }
 #icon-grid{
     align-items: center;
 }
+#icon-grid img{
+    border: none;
+    box-shadow: none;
+    display: block;
+   color: #1b4965;
+   
+
+}
+.about p{
+    color:#02182b;
+    font-size: 20px;
+    text-align: center;
+}
+.about ul li{
+    list-style-type: circle;
+    font-size:20px;
+  }

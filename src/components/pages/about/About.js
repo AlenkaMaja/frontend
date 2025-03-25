@@ -33,7 +33,7 @@ const About = () => {
   <h2 className="pb-2 border-bottom">8 Good Reasons to Book with Adriatic Sailing Adventure</h2>
 
   <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-    <div className="col d-flex align-items-start">
+    <div className="col d-flex align-items-centar">
       <svg className="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"></svg>
       <div>
         <img src="/ASA/img/white-wind-rose-svgrepo-com.svg" height="90" width="90" className="ms-5 ps-1 mb-3" alt="wind-rose" />

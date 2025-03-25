@@ -72,7 +72,7 @@ return (
 <div className="container-fluid">
   <div className="row">
     <div className="col-md-6 login-intro">
-      <Link to="/Home" className="me-auto">
+      <Link to="/" className="me-auto">
         <img
           src="/ASA/img/ASA-logo-bijeli.jpeg"
           width={100}
@@ -114,7 +114,7 @@ return (
             className="mb-4"
             name="password" value={form.password}
           />
-          <p className="text-end mb-4 mt-1">
+          <p className="text-end  mb-5 mt-1">
             <Link to="/">Forgot Password?</Link>
           </p>
           

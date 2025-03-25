@@ -1,0 +1,21 @@
+
+  .exchange-btn-right button{
+    display: block;
+    margin-right: 0;
+    padding: 0px 20px;
+    margin: 20px 0 0 20px;
+    justify-content: flex-end;
+    background-color: #02182b;
+    color: white;
+    font-size: 18px;
+    border: 1px solid;
+    cursor: pointer;
+    max-width: fit-content;
+    opacity: 0.9; 
+    border-radius: 90px;
+   
+  }
+
+  .exchange p{
+    font-size: 18px;
+  }

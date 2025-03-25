@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import '../gutenberg.css';
+import './Charter.css';
 
 const Schools = () => {
   const [pageData, setPageData] = useState(null);
@@ -15,10 +16,11 @@ const Schools = () => {
     
       if(!pageData) return <p>Loading....</p>
   return ( 
-<div className="container">
+<div className="container schools">
+    <div className="d-flex justify-content-center">
     <div dangerouslySetInnerHTML={{__html: pageData.content.rendered}} /> 
   </div> 
-   
+</div>   
   );
 };
 

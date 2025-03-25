@@ -20,8 +20,10 @@ const Footer = () => {
     <div className="Footer">
       <div className="Footer-sections row">
         <div className="Footer-section col-md-3">
+          <Link to="/">
           <img src="/ASA/img/ASA-logo-bijeli.jpeg" height="90" width="90" className="align-left" alt="ASA" />
-            <h5 className="Footer-sectionTitle">Book your trip in a minute<br />
+          </Link>
+            <h5 className="Footer-sectionTitle mt-3">Book your trip in a minute<br />
                 get full Control for much longer.</h5>
         </div>
       <div className="Footer-section col-md-2">
@@ -31,10 +33,10 @@ const Footer = () => {
               <Link to="/about" className="link"  target="_blank" rel="noopener">About</Link>
             </li>
             <li className="Footer-linkListItem">
-              <a className="link" href="/" target="_blank" rel="noopener">Careers</a>
+              <a className="link" href="/environment" target="_blank" rel="noopener">Caring</a>
             </li>
             <li className="Footer-linkListItem">
-              <a className="link" href="/" target="_blank" rel="noopener">Mobile</a>
+              <a className="link" href="/" target="_blank" rel="noopener">GT</a>
             </li>
           </ul>
       </div>
@@ -48,7 +50,7 @@ const Footer = () => {
             <Link to="/weather" target="_blank" rel="noopener">Weather</Link>
           </li>
           <li className="Footer-linkListItem">
-            <Link to="/marina"  target="_blank" rel="noopener">Ports</Link>
+            <Link to="/ports"  target="_blank" rel="noopener">Ports</Link>
           </li>
         </ul>
       </div>

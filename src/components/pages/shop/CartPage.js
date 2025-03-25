@@ -31,13 +31,14 @@ const CartPage = () => {
                 <img className="d-block mx-auto mb-4" src="/ASA/img/shopping-cart-svgrepo-com.svg" alt="shopping-cart" width="72" height="57"/>
                 <div className="row">
                     <h2 className="col-md-8 m-auto">Cart</h2>
-                    <p className="lead col-md-8 m-auto">Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+                    <p className="lead col-md-8 m-auto">Below are all the products you have selected on the Shop page. You can remove them and return to the store for other items before you proceed to checkout where you need to fill out the checkout form and proceed to payment.</p>
                 </div>
             </div>
         </div>
     </div>
     <div className="container py-5">
-        <table className="table table-hover">
+    
+        <table className="carttable table-hover" style={{ width: "100%", borderCollapse: "collapse", tableLayout: "fixed" }}>
         <thead>
          <tr>
             <th>Image</th>

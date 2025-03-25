@@ -1,4 +1,5 @@
 import React, { useEffect, useState }  from "react";
+import "./Exchange.css"
 
 const Exchange = () => {
   const [exchangeRates, setExchangeRates] = useState({ rates: {} });
@@ -57,7 +58,8 @@ const Exchange = () => {
                   value={amount} 
                   onChange={(e) => setAmount(e.target.value)} 
               />
-          </label>
+          </label> 
+          <div className="container">
           <p>
               <label>
                   From:
@@ -76,14 +78,17 @@ const Exchange = () => {
                       ))}
                   </select>
               </label>
-         
+                <div className="exchange-btn-right">     
               <button onClick={convertCurrency}>Convert</button> 
-          
+         
               {convertedAmount !== null && (
                   <h2>{amount} {fromCurrency} = {convertedAmount} {toCurrency}</h2>
               )}
-          </p>
-      </div>
+              </div>
+          </p> 
+        </div>  
+      </div> 
+     
   );
 };
 

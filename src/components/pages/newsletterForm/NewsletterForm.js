@@ -42,7 +42,7 @@ return (
   <form onSubmit={handleSubmit}>  
      <div className="container mt-5"> 
      <div className="row justify-content-center">
-    <h2>Enter your email to receive latest news. </h2>      
+    <h1>Enter your email to receive the latest news! </h1>      
          {error && <p style={{ color: "red" }}>{error}</p>}
          {success && <p style={{ color: "green" }}>{success}</p>}
     <div className="container ms-5">

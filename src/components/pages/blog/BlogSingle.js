@@ -33,7 +33,9 @@ const BlogSingle = () => {
             Published: <PostDate date={post.date}/>
             </p>
             <div className="container">
-            <MediaImg id={post.featured_media} size="full" />
+                <div className="center-img">
+                <MediaImg id={post.featured_media} size="full" class="img-fluid" alt="Centered Image"/>
+                </div>
             </div>
             <p>
             Author: <PostAuthor authorID={post.author} />

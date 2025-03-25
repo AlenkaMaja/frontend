@@ -65,10 +65,12 @@
   
   }
   .login-form h2{
-    font-size: 14px;
+    font-size: 16px;
   }
   .login-form h1{
     text-align: center;
+    font-size: 32px;
+    font-weight: 600;
   }
   
   .login-form label{
@@ -89,9 +91,8 @@
     margin-left: 0;
     border-radius: 90px;
     color: white;
-    padding-left: 15px;
-    padding-right: 15px;
-    font-size: 16px;
+    padding: 0px 20px;
+    font-size: 18px;
     border: none;
     cursor: pointer;
     max-width: fit-content;
@@ -100,7 +101,7 @@
   
   .login-form p{
     color: #02182b;
-    font-size: 16px;
+    font-size: 18px;
   }
   
   .login-form a{
@@ -151,6 +152,8 @@
     right: 0;
     top: 0;
     margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
@@ -158,17 +161,35 @@
     padding-top: 50px;
   }
 
-  .btn-right{
-    display: flex;
+  .btn-right {
+    display: block;
+   margin-right: 0;
     justify-content: flex-end;
     background-color: none;
-    border-radius: 90px;
+    margin:20px 20px 40px;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     border: none;
     cursor: pointer;
     max-width: fit-content;
     opacity: 0.9; 
+    height: 0;
+  }
+  .btn-right button{
+    display: block;
+    margin-right: 0;
+    padding: 0px 20px;
+    margin: 20px 0 40px 20px;
+    justify-content: flex-end;
+    background-color: none;
+    color: white;
+    font-size: 18px;
+    border: 1px solid;
+    cursor: pointer;
+    max-width: fit-content;
+    opacity: 0.9; 
+    border-radius: 90px;
+   
   }
   .sign-up-container {
     display: flex;
@@ -190,7 +211,7 @@
     font-size: 16px;
     padding-bottom: 34px;
     padding-top: 10px;
-    padding-right: 25px;
+    padding-right: 20px;
     padding-left: 20px;
     border: none;
     cursor: pointer;

@@ -21,24 +21,35 @@
 
 #post.featured_media{
     object-position: 50% 50%;
+    
 }
 
 .blog{
     color: #1B4965;
     border-bottom: solid #b69c4a 1px;
 }
+.blog img{
+border: 1px;
+border-radius: 15px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .generalije p{
-    font-size: 16px;
-    color: #1c6273;
-    font-style: italic;
+font-size: 16px;
+color: #1c6273;
+font-style: italic;
 }
 .single-post img{
-    position: inherit;
-    padding-right: 40px;
+position: inherit;
+border: 1px;
+border-radius: 15px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.single-post .center-img{
+    text-align: center;
 }
 .post-content li{
-    margin: 40px 0;
-    font-size: 24px;
-    text-align: center;
-    color: #02182b;   
+margin: 40px 0;
+font-size: 24px;
+text-align: center;
+color: #02182b;   
 }

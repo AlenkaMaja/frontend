@@ -18,6 +18,8 @@ import Ownership from './components/pages/charter/Ownership';
 import About from './components/pages/about/About';
 import Faq from './components/pages/faq/Faq';
 import Weather from './components/pages/weather/Weather';
+import Environment from './components/pages/environment/Environment';
+import Ports from './components/pages/ports/Ports';
 import Contact from './components/pages/contact/Contact';
 import Blog from './components/pages/blog/Blog';
 import BlogSingle from './components/pages/blog/BlogSingle';
@@ -61,6 +63,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/faq" element={<Faq />} />
           <Route path="/weather" element={<Weather />} />
+          <Route path="/environment" element={<Environment />} />
+          <Route path="/ports" element={<Ports />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogSingle />} />

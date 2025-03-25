@@ -39,7 +39,6 @@ header p{
 
 header .navbar-toggler, header .navbar-toggler:focus{
   color: #1c6273;
-  width: 100%;
   border: 1px solid #fff;
   font-size: 14px;
 }
@@ -181,95 +180,19 @@ input[type=text]:focus, input[type=password]:focus {
   background-color: #ddd;
   outline: none;
 }
-.btn-light{
-  text-decoration: none;
-  display: block;
-  background-color: #ced4da;
-  border: solid 1px color#02182B;
-  color: #212832;
-  padding: 14px 20px;
-  margin: 20px 20px 40px 20px;
-  height: auto;
-  cursor: pointer;
-  opacity: 0.9;
-}
-.btn-light:hover {
-  opacity:1;
-}
+
 button {
     background-color: none;
     color: #212832;
     margin: 20px 20px;
-    border-radius: 3px;
+    border-radius: 90px;
     border: solid 1px color#02182B;
     cursor: pointer;
     opacity: 0.9;
     height: 30px;
     
   }
-  
-  button:hover {
-    opacity:1;
-  }
-  .cancelbtn {
-    padding: 14px 20px;
-    background-color: #448fA3;
-  }
-  /*.container {
    
-    justify-content: space-evenly;
-  }*/
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    margin-top: 10px;
-    width: 80%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: #474e5d;
-    padding-top: 50px;
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 90%; /* Could be more or less, depending on screen size */
-    padding: 10px;
-  }
-  
-  /* Style the horizontal ruler */
-  hr {
-    border: 1px solid #212832;
-    margin-bottom: 25px;
-  }
-   
-  /* The Close Button (x) */
-  .close {
-    position: absolute;
-    right: 35px;
-    top: 15px;
-    font-size: 40px;
-    font-weight: bold;
-    color: #f1f1f1;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #f44336;
-    cursor: pointer;
-  }
-  
-  /* Clear floats */
-  .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
   
   .navbar a:hover{
           color: rgba(255, 255, 255, 1);

@@ -1,0 +1,23 @@
+.faq p, h1, h2{
+    color: #02182b;
+    text-align: start;
+    
+    font-family: "Manrope", sans-serif;
+}
+.faq ul li{
+    list-style-type: circle;
+  
+  }
+  .faq ul li{
+    font-size: 20px;
+    color:#02182b
+  }
+  .faq h1{
+    color: #02182b;
+    font-size: 20px;
+    font-family: "Manrope", sans-serif;
+}
+
+.faq p{
+    font-size: 18px;
+}

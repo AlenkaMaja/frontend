@@ -1,0 +1,14 @@
+.environment img{
+    position: inherit;
+    padding-left: 0px;
+    margin-left: 0px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .environment p{
+    color: #021820;
+    font-size: 24px;
+  }
+  .environment h1{
+    font-size: 26px;
+  }

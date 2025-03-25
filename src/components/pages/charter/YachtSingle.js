@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Tabs, Tab } from "@mui/material";
 import MediaImg from "../media/MediaImg";
 import '../gutenberg.css';
+import './Charter.css';
 
 const YachtSingle = () => {
     const { id } = useParams();
@@ -31,7 +32,7 @@ const YachtSingle = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplayspeed: 3000
+        autoplaySpeed: 3000,
     };
 
 return (
@@ -45,7 +46,7 @@ return (
                 <MediaImg id={post.acf.main_photo} size="full" />
                 <MediaImg id={post.acf.Exterior_photo} size="full" />
                 <MediaImg id={post.acf.aerial_photo} size="full" />
-                <MediaImg id={post.acf.flybridge} size="full" />
+                <MediaImg id={post.acf.flybridge} size="full"/>
                 <MediaImg id={post.acf.cockpit} size="full" />
                 <MediaImg id={post.acf.bow_area} size="full" />
                 <MediaImg id={post.acf.galley} size="full" />
@@ -114,7 +115,7 @@ return (
         </div>  
 
             {/* Yacht Description */}
-        <div className="col-md-12">
+        <div className="col-md-12  post-content">
             <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
         </div>
            
@@ -122,48 +123,46 @@ return (
         
 
     </div>
-<div className="container">
+  <div className="container">
     <div className="row mt-5">
       <div className="col-md-10">
-        <h3 className="text-uppercase mb-4">Interested in {post.acf.model}? Find out more!</h3>
+        <h3 className="text-uppercase mb-4">Interested in {post?.acf?.model ? post.acf.model : "this yacht"}? Find out more!</h3>
         <p className="text-align-center mb-3">Send us your contact and desired weekly period, and we will revert to you with availability and official offer </p>
         
-        <form action="contact" method="GET">
+        <form onSubmit={(e) => {
+          e.preventDefault();
+          const formData = new FormData(e.target);
+          const data = Object.fromEntries(formData.entries());
+          console.log("Form Submitted:", data);
+          }}>
           <div className="row">
             <div className="col-md-6 mb-3">
               <label className="form-label">Name &amp; Surname</label>
-              <input type="text" name="name" className="form-control" />
+              <input type="text" name="name" className="form-control" required />
             </div>
             <div className="col-md-6 mb-3">
               <label className="form-label">E-mail address</label>
-              <input type="email" name="email" className="form-control" />
+              <input type="email" name="email" className="form-control" required />
             </div>
             <div className="col-md-6 mb-3">
               <label className="form-label">Telephone</label>
               <input type="text" name="telefon" className="form-control" />
             </div>
             <div className="col-md-6 mb-3">
-              <label className="form-label">Company name *optional</label>
+              <label className="form-label">Company name (optional)</label>
               <input type="text" name="tvrtka" className="form-control" />
             </div>
             <div className="col-md-12">
               <label className="form-label">Message</label>
-              <textarea
-                name="poruka"
-                className="form-control  mb-3"
-                defaultValue={""}
-              />
-              <button type="submit" className="btn btn-secondary">
-                Send
-              </button>
+              <textarea name="poruka" className="form-control mb-3" />
+              <button type="submit" className="btn btn-secondary">Send</button>
             </div>
           </div>
         </form>
       </div>
-
     </div>
-</div> 
-</div> 
+  </div>
+</div>
    
 );
 };

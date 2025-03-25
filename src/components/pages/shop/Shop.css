@@ -47,6 +47,10 @@ padding: 20px;
 .shop button{
 height: auto; 
 }
+.cart p{
+    color:#02182b;
+    font-weight: 400;
+}
 .checkoutPage-card button{
 margin-top: 20px;
 margin-right: 20px;
@@ -99,6 +103,45 @@ background-color: #efefef;
     -moz-user-select: none;
     user-select: none;
   }
+  
+  .carttable {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto; /* Allows flexible column widths */
+  }
+  
+  /* Style for table header */
+  .carttable th {
+    background-color: #f8f9fa; /* Light gray background */
+    text-align: left;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  /* Style for table rows */
+  .carttable td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  /* Ensure images in the table are centered */
+  .carttable td img {
+    display: block;
+    margin: 0 auto;
+  }
+  .carttable button {
+    background-color: #dc3545; /* Bootstrap danger color */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .carttable button:hover {
+    background-color: #c82333;
+  }
+  
 
   @media (min-width: 768px) {
     .bd-placeholder-img-lg {
